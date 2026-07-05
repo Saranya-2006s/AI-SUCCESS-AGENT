@@ -1,250 +1,345 @@
-🎓 AI College Success Agent
-Your Intelligent Academic Companion for Student Success
+<div align="center">
 
-Plan • Learn • Track • Prepare • Succeed
+# 🎓 AI College Success Agent
 
+### Your Intelligent Academic Companion Powered by AI
 
-;;l
+<img src="https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react"/>
+<img src="https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript"/>
+<img src="https://img.shields.io/badge/Node.js-Express-green?style=for-the-badge&logo=node.js"/>
+<img src="https://img.shields.io/badge/MongoDB-Database-green?style=for-the-badge&logo=mongodb"/>
+<img src="https://img.shields.io/badge/Firebase-Authentication-orange?style=for-the-badge&logo=firebase"/>
+<img src="https://img.shields.io/badge/Gemini-AI-purple?style=for-the-badge&logo=google"/>
 
+An AI-powered academic assistant that helps students manage studies, assignments, attendance, placements, schedules, and personalized learning using Google Gemini AI.
 
+---
 
+</div>
 
+# ✨ Features
 
+## 📚 Academic Management
 
+- Smart Study Planner
+- Assignment Manager
+- Timetable Management
+- Library Resources
+- Goal Generator
+- Analytics Dashboard
 
+---
 
+## 🤖 AI Features
 
-📖 Overview
+- AI Chat Assistant
+- Personalized Study Plans
+- Intelligent Goal Recommendations
+- Academic Guidance
+- Learning Support
 
-AI College Success Agent is an AI-powered academic assistant designed to help college students organize their studies, improve productivity, prepare for placements, and manage daily academic activities from a single dashboard.
+---
 
-The application combines Google Gemini AI, Firebase, and a modern React + TypeScript interface to deliver personalized recommendations, smart study planning, AI chat assistance, assignment tracking, attendance prediction, and placement preparation.
+## 📈 Student Analytics
 
-📑 Table of Contents
-🎯 Features
-🚀 Why AI College Success Agent?
-🏗 System Architecture
-📸 Application Modules
-🛠 Tech Stack
-📂 Project Structure
-⚙ Installation
-▶ Running the Project
-🔥 Firebase Integration
-📊 Future Enhancements
-👨‍💻 Developer
-📄 License
-🎯 Key Features
-Feature	Description
-🤖 AI Study Assistant	Get instant academic guidance using Google Gemini AI
-📅 Smart Study Planner	Automatically organize daily and weekly study schedules
-📝 Assignment Manager	Track assignments, due dates, and submission status
-📊 Attendance Predictor	Predict attendance percentage and shortage risk
-🎯 Goal Generator	Generate personalized academic goals
-💬 AI Chatbot	Ask academic, coding, and career-related questions
-📈 Student Analytics	Monitor academic progress with interactive dashboards
-📚 Digital Library	Store and organize study materials
-💼 Placement Preparation	Practice aptitude and interview questions
-⏰ Timetable Manager	Manage daily class schedules efficiently
-🚀 Why AI College Success Agent?
-Traditional Student Apps	AI College Success Agent
-Static Timetable	AI Generated Study Plans
-Manual Task Management	Smart Assignment Tracking
-Basic Notes	AI Academic Assistant
-Separate Apps	All-in-One Dashboard
-No Analytics	Performance Insights
-Manual Goal Setting	AI Goal Recommendations
-Limited Placement Resources	Built-in Placement Preparation
-🏗 System Architecture
-                    Student
-                       │
-                       ▼
-            React + TypeScript Frontend
-                       │
-                       ▼
-              Google Gemini AI API
-                       │
-        ┌──────────────┼──────────────┐
-        ▼              ▼              ▼
-   Study Planner   AI Chatbot   Goal Generator
-        │              │              │
-        └──────────────┼──────────────┘
-                       ▼
-                  Firebase Database
-                       │
-                       ▼
-             Analytics & User Progress
-📸 Application Modules
-🏠 Dashboard
-Academic overview
-Quick statistics
-Daily progress
-📅 Study Planner
-Personalized study schedules
-Daily task planning
-Subject prioritization
-📝 Assignment Manager
-Assignment tracking
-Deadline reminders
-Completion status
-📊 Attendance Predictor
-Attendance percentage calculation
-Shortage prediction
-Required attendance estimation
-🎯 Goal Generator
+- Attendance Prediction
+- Progress Tracking
+- Performance Dashboard
+- Productivity Analytics
 
-Generate
+---
 
-Semester goals
-Weekly goals
-Daily learning objectives
+## 💼 Placement Preparation
 
-using AI.
+- Aptitude Practice
+- Placement Resources
+- Interview Preparation
+- Career Guidance
 
-💬 AI Chatbot
+---
 
-Students can ask:
+# 🏗 Project Architecture
 
-Programming doubts
-Subject explanations
-Career guidance
-Interview preparation
-Study tips
+```text
+                        +----------------------+
+                        |      Student         |
+                        +----------+-----------+
+                                   |
+                                   |
+                          React + TypeScript
+                                   |
+        ---------------------------------------------------
+        |          |          |         |                 |
+        |          |          |         |                 |
+ Dashboard  Study Planner  AI Chat  Analytics   Assignment Manager
+        |          |          |         |                 |
+        ---------------------------------------------------
+                                   |
+                              Express Server
+                                   |
+             ---------------------------------------
+             |                                     |
+      Google Gemini AI                     Firebase Services
+             |                                     |
+             -------------------+-------------------
+                                 |
+                           MongoDB Database
+                                 |
+                     Student Data / Tasks / Goals
+```
 
-Powered by Google Gemini AI.
+---
 
-📈 Analytics
+# 🛠 Tech Stack
 
-Provides
+## Frontend
 
-Academic progress
-Study statistics
-Assignment completion
-Attendance trends
-📚 Digital Library
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide React
+- Recharts
 
-Store
+## Backend
 
-Notes
-PDFs
-Study resources
+- Node.js
+- Express.js
 
-in one place.
+## Database
 
-💼 Placement Preparation
+- MongoDB
 
-Includes
+## AI
 
-Aptitude Questions
-Interview Practice
-Coding Preparation
-Placement Tips
-⏰ Timetable
+- Google Gemini API
 
-Organize
+## Cloud
 
-Class schedules
-Labs
-Events
-Study sessions
-🛠 Tech Stack
-Frontend
-React 19
-TypeScript
-Vite
-CSS
-Backend
-Node.js
-Express
-AI
-Google Gemini API
-Database
-Firebase Firestore
-Development Tools
-VS Code
-Git
-GitHub
-📂 Project Structure
+- Firebase
+
+---
+
+# 📂 Project Structure
+
+```
 AI-COLLEGE-SUCCESS-AGENT
 │
-├── src/
-│   ├── components/
-│   │      Dashboard
-│   │      Study Planner
-│   │      Attendance Predictor
-│   │      Goal Generator
-│   │      AI Chatbot
-│   │      Assignment Manager
-│   │      Analytics
-│   │      Library
-│   │      Placement Prep
-│   │      Timetable
-│   │
-│   ├── data/
+├── src
+│   ├── components
+│   ├── data
 │   ├── firebase.ts
 │   ├── App.tsx
-│   └── main.tsx
+│   ├── main.tsx
+│   └── types.ts
 │
-├── assets/
 ├── server.ts
 ├── package.json
-├── firestore.rules
 ├── vite.config.ts
-└── README.md
-⚙ Installation
-Clone Repository
+├── firebase-blueprint.json
+└── firestore.rules
+```
+
+---
+
+# 🚀 Installation
+
+Clone the repository
+
+```bash
 git clone https://github.com/yourusername/AI-COLLEGE-SUCCESS-AGENT.git
-Navigate
+```
+
+Move into project
+
+```bash
 cd AI-COLLEGE-SUCCESS-AGENT
-Install Dependencies
+```
+
+Install dependencies
+
+```bash
 npm install
-▶ Run Development Server
+```
+
+Configure environment
+
+```bash
+cp .env.example .env
+```
+
+Start Development Server
+
+```bash
 npm run dev
+```
 
-Open
+---
 
-http://localhost:5173
-🔥 Firebase Configuration
+# ⚙ Environment Variables
 
-Create a .env file.
+Create a `.env` file
 
-VITE_FIREBASE_API_KEY=YOUR_API_KEY
-VITE_FIREBASE_AUTH_DOMAIN=YOUR_DOMAIN
-VITE_FIREBASE_PROJECT_ID=YOUR_PROJECT_ID
-VITE_FIREBASE_STORAGE_BUCKET=YOUR_BUCKET
-VITE_FIREBASE_MESSAGING_SENDER_ID=YOUR_SENDER_ID
-VITE_FIREBASE_APP_ID=YOUR_APP_ID
+```env
+GEMINI_API_KEY=your_api_key
 
-GEMINI_API_KEY=YOUR_GEMINI_API_KEY
-🚀 Future Enhancements
-📱 Mobile Application
-🔔 Smart Notifications
-🤝 Student Collaboration
-🎥 Online Class Integration
-📄 Resume Builder
-🤖 AI Mock Interview
-📊 CGPA Predictor
-🧠 Personalized Learning Recommendations
-🌐 Multi-language Support
-🎓 Faculty Dashboard
-👨‍💻 Developer
+MONGODB_URI=your_mongodb_connection_string
 
-Saranya S
+FIREBASE_API_KEY=
 
-Computer Science Student
+FIREBASE_AUTH_DOMAIN=
 
-Passionate about
+FIREBASE_PROJECT_ID=
 
-Artificial Intelligence
-Full Stack Development
-Machine Learning
-Cloud Technologies
-Student Productivity Solutions
-⭐ Support
+FIREBASE_STORAGE_BUCKET=
 
-If you like this project,
+FIREBASE_MESSAGING_SENDER_ID=
 
-⭐ Star the repository
+FIREBASE_APP_ID=
+```
 
-🍴 Fork it
+---
 
-🛠 Contribute to improve it
+# 📱 Application Modules
+
+✅ Dashboard
+
+✅ Study Planner
+
+✅ Assignment Manager
+
+✅ AI Chatbot
+
+✅ Attendance Predictor
+
+✅ Goal Generator
+
+✅ Analytics
+
+✅ Library
+
+✅ Placement Preparation
+
+✅ Timetable
+
+---
+
+# 🔄 Application Workflow
+
+```text
+Student
+   │
+   ▼
+React Frontend
+   │
+   ▼
+Express Backend
+   │
+   ├──────────────► Google Gemini AI
+   │
+   ├──────────────► Firebase
+   │
+   └──────────────► MongoDB
+                      │
+                      ▼
+               Student Records
+               Assignments
+               Attendance
+               Goals
+               Analytics
+```
+
+---
+
+# 📊 Database Collections
+
+```text
+students
+
+assignments
+
+attendance
+
+studyPlans
+
+goals
+
+analytics
+
+timetable
+
+placement
+
+library
+```
+
+---
+
+# 🎯 Future Enhancements
+
+- AI Voice Assistant
+- OCR Notes Scanner
+- Smart Attendance using Face Recognition
+- Mobile Application
+- Real-Time Notifications
+- AI Exam Predictor
+- PDF Study Material Generator
+- AI Resume Builder
+
+---
+
+# 📷 Screenshots
+
+```
+screenshots/
+
+├── dashboard.png
+
+├── chatbot.png
+
+├── planner.png
+
+├── analytics.png
+
+├── attendance.png
+```
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+
+2. Create a feature branch
+
+3. Commit your changes
+
+4. Push the branch
+
+5. Open a Pull Request
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👨‍💻 Author
+
+**Saranya S**
+
+AI Developer | Full Stack Developer
+
+---
+
+<div align="center">
+
+### ⭐ If you like this project, don't forget to star the repository!
+
+Made with ❤️ using React, TypeScript, MongoDB, Firebase and Google Gemini AI
+
+</div>
